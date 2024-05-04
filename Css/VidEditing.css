@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.maincontainer {
+    width: 100%;
+    height: 100vh;
+}
+
+.Sections {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Section1 {
+    background-color: chartreuse;
+}
+
+.Section2 {
+    background-color: aqua;
+}
+
+
+.Section3 {
+    background-color: yellow;
+}
+
+
+.Section4 {
+    background-color: brown;
+}
+
+.ScrollButton{
+    width: 20px;
+    height: 40px;
+    align-content: center;
+
+}
+
+
+
+/* ----------------------------------------------------------- navbar ----------------------------------------- */
+ul {
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10px;
+    overflow: hidden;
+    background-color: #333;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
