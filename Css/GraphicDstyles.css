@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    box-sizing: border-box;
 }
 
 html{
     scroll-behavior: smooth;
+    height: 100%;
 }
 .maincontainer {
     width: 100%;
@@ -16,9 +16,7 @@ html{
 .Sections {
     width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .Section1 {
@@ -32,19 +30,35 @@ html{
 /* illustration */
 
 .Section3 {
-    background-image: (url(../Images/Services/427577749_10224388628080133_7596503782770898990_n.jpg));
+    background-image: url(../Images/Services/GraphicDesign/brick\ wall.jpeg);
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
+.illustration {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    padding-top: 5%;
 
-.Section4 {
-    background-color: brown;
+}
+
+.illustrationtopic {
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.illustrationparagraph {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.6;
+
 }
 
 .ScrollButton{
     width: 20px;
     height: 40px;
-    align-content: center;
 
 }
 

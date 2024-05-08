@@ -16,27 +16,72 @@ html{
 .Sections {
     width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .Section1 {
     background-color: chartreuse;
+
 }
 
+
+
+/* commercial */
 .Section2 {
     background-color: aqua;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.Section2 p{
+    text-align: center;
+}
+.vidgallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Style for each gallery item */
+.gallery-item {
+    margin-top: 4%;
+    width: calc(33.33% - 10px); /* Adjust as needed */
+    margin-bottom: 0px;
+}
+
+/* Style for the images */
+.gallery-item img {
+    width: 90%;
+    height: auto;
+}
+
+/* Style for the image captions */
+.gallery-item p {
+    margin-top: 5px;
+    text-align: center;
 }
 
 
+
+/* social media */
 .Section3 {
     background-color: yellow;
 }
 
-
+/* color grading */
 .Section4 {
     background-color: brown;
+}
+
+/* infographics */
+.Section5 {
+    background-color: rgb(255, 136, 0);
+}
+
+/* YT channels */
+.Section6 {
+    background-color: rgb(255, 57, 206);
 }
 
 .ScrollButton{
@@ -80,3 +125,5 @@ ul {
   .active {
     background-color: #04AA6D;
   }
+
+
