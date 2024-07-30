@@ -1,93 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Staatliches', cursive;
+  box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
+
 .maincontainer {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 .Sections {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
+
+
+/* Vide editing first page */
 
 .Section1 {
-    background-color: chartreuse;
+  background-color: rgb(0, 0, 0);
 
+}
+
+#IntroVid:hover::cue {
+  display: none;
+}
+
+#IntroVid::-webkit-media-controls {
+  display: none !important;
+}
+
+#IntroVid:hover::-webkit-media-controls {
+  display: none !important;
 }
 
 
 
-/* commercial */
+.VidIntroContainer {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.VidIntro-section {
+  flex: 1;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.VidIntro-section video {
+  height:auto;
+  width: 100%;
+}
+
+.services-section {
+  flex: 3;
+  background-color: #000000;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.services-section p {
+  padding-top: 2%;
+  color: #ffffff;
+  font-size: 8rem;
+  margin-bottom: 20px;
+  line-height:7rem;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.icon img{
+  width: 80px;
+  height: 80px;
+  background-color: #dddddd00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+.service-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  color: #fff;
+}
+
+.service-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.service-info {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.service-info a{
+  text-decoration: none;
+  color: inherit; /* Optional: to set the color for all states */
+}
+.service-info span {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.service-info span::after {
+  margin-left: 8px;
+  font-size: 24px;
+  color: #000;
+}
+
+
+
+
+
+/* Social Media */
 .Section2 {
-    background-color: aqua;
-    align-items: center;
-    padding-top: 5%;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  padding-top: 5%;
 }
 
-.Section2 p{
-    text-align: center;
+.Section2 p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
 }
-.vidgallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 5%;
-    padding-right: 5%;
+
+.Section2 h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+
+.vidgallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /* Style for each gallery item */
 .gallery-item {
-    margin-top: 4%;
-    width: calc(33.33% - 10px); /* Adjust as needed */
-    margin-bottom: 0px;
+  margin-top: 4%;
+  width: calc(33.33% - 10px);
+  /* Adjust as needed */
+  margin-bottom: 0px;
 }
 
 /* Style for the images */
 .gallery-item img {
-    width: 90%;
-    height: auto;
+  width: 90%;
+  height: auto;
+  z-index: 1;
 }
 
 /* Style for the image captions */
 .gallery-item p {
-    margin-top: 5px;
-    text-align: center;
+  margin-top: 5px;
+  text-align: center;
 }
 
 
 
-/* social media */
+/* Commercial */
 .Section3 {
-    background-color: yellow;
+  background-color: rgb(255, 255, 255);
 }
+
+.ComVidContent {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.ComVidContent h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: #000;
+  padding-top: 3%;
+}
+
+.ComVidContent p {
+  margin: 1rem 0 3rem;
+  font-size: 1.5rem;
+}
+
+.comgif-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.comgif-frame {
+  width: 350px;
+  height: 350px;
+  border: 2px solid #333;
+  border-radius: 15px;
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.comgif-frame video{
+  
+}
+
+.arrow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.premiere-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.next-section {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #333;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
 
 /* color grading */
 .Section4 {
-    background-color: brown;
+  background-color: brown;
+  z-index: 99;
 }
+
+.ColorGradeContainer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.ColorGradeContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  max-width: 1900px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.CGtext-section {
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 1px solid #ddd;
+}
+
+.CGtext-section h2 {
+  padding-top: 19%;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.CGtext-section p {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.CGvideoo-section {
+  width: 70%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.monitor {
+  width: 100%;
+  max-width: 80rem;
+  background: url('https://via.placeholder.com/800x450?text=Monitor+Frame') no-repeat center center;
+  background-size: contain;
+  position: relative;
+  padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+}
+
+.CGvideoo-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.CGvideoo-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.CGtext-overlay {
+  position: absolute;
+  bottom: 10px;
+  font-size: 2rem;
+  font-weight: 100;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.CGtext-overlay.left {
+  left: 10px;
+}
+
+.CGtext-overlay.right {
+  right: 10px;
+}
+
+.divider {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0.3rem;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+
 
 /* infographics */
 .Section5 {
-    background-color: rgb(255, 136, 0);
+  background-color: rgb(255, 136, 0);
 }
 
-/* YT channels */
+/* --------------------------------------  YT channels  --------------------------------------- */
 .Section6 {
-    background-color: rgb(255, 57, 206);
+  background-color: rgb(0, 0, 0);
 }
 
-.ScrollButton{
-    width: 20px;
-    height: 40px;
-    align-content: center;
+.Section6 p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.Section6 h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #ffffff;
+  padding-top: 6rem;
+}
+
+
+
+/* before adding the photo to the div with the "card-photo" class, in the css clear the styles for .card-photo and remove .card-photo::before and .card-photo::after, then set the desired styles for .card- photo. */
+
+.YTchannels {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.youtubecard {
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: #fff;
+  --main-color: #323232;
+  width: 200px;
+  height: 300px;
+  background: var(--bg-color);
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+
+.youtubecard-photo{
+  width: 6rem;
+  height: auto;
+  border-radius: 20%;
+}
+
+
+.youtubecard-title {
+  text-align: center;
+  color: var(--font-color);
+  padding-top: 1rem;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.youtubecard-title span {
+  font-size: 15px;
+  color: var(--font-color-sub);
+}
+
+.youtubecard-socials {
+  display: flex;
+  height: 0;
+  opacity: 0;
+  margin-top: 20px;
+  gap: 20px;
+  transition: 0.5s;
+}
+
+.card-socials-btn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.youtubecard-socials-btn svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--main-color);
+}
+
+.youtubecard:hover>.youtubecard-socials {
+  opacity: 1;
+  height: 35px;
+}
+
+.youtubecard-socials-btn:hover {
+  transform: translateY(-5px);
+  transition: all 0.15s;
+}
+
+
+
+
+
+.ScrollButton {
+  width: 20px;
+  height: 40px;
+  align-content: center;
 
 }
 
@@ -95,35 +509,33 @@ html{
 
 /* ----------------------------------------------------------- navbar ----------------------------------------- */
 ul {
-    position: fixed;
-    list-style-type: none;
-    margin: 0;
-    padding-top: 10px;
-    overflow: hidden;
-    background-color: #333;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  .active {
-    background-color: #04AA6D;
-  }
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 10px;
+  overflow: hidden;
+  background-color: #333;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
 
+li {
+  float: left;
+}
 
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}

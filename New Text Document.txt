@@ -1,0 +1,26 @@
+Graphic design
+
+- fix the navbar
+- fix the extra part visible of the billboard in the section 2
+- add thumbnails to social media photos
+- 
+
+3D generalist 
+
+- finish up the mellove video and upload it so you can embed it.
+- make the atlas markerpen gif
+- and another 4 prodcut images for the product section
+	-1 something ponds
+	-2 canned drink ( any drink )
+	-3 jack daniels
+	-4 
+- start the blender file to make rotating objects in one round stage
+	-2 one person sofa
+	-3 washing machine
+	-4 cute lil monster ( with floating something )
+	-5 meal on a plate
+	-6 crate
+	-7 something inside a jar ( like mushrooms or somen)
+	-8 ramen bowl
+- fix the paragraph for the 3d modelling part ( add some more )
+- add buttons to jump to the next section

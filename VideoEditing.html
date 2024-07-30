@@ -26,36 +26,106 @@
     <section id="Vid-home">
         <div class="maincontainer">
             <div class="Sections Section1">
-                <h1>video</h1>
-                <a href="#vid-commercial">
-                    <button class="ScrollButton"> Hi</button>
-                </a>
+                
+                <div class="VidIntroContainer">
+                    <div class="VidIntro-section">
+                        <video id="IntroVid" controls autoplay muted loop>
+                            <source src="Images/Services/VideoEditing/BaseUI.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="services-section">
+                        <h1>Video Editing</h1>
+                        <p>Turning moments into masterful visual stories. </p>
+                        <div class="icons">
+                            <div class="icon"><img src="Images/Services/VideoEditing/Softwares/pngwing.com (4).png"></div>
+                            <div class="icon"><img src="Images/Services/VideoEditing/Softwares/pngwing.com (6).png"></div>
+                            <div class="icon"><img src="Images/Services/VideoEditing/Softwares/pngwing.com (9).png"></div>
+                        </div>
+                        <div class="service-box" style="background-image: url('');">
+                            <div class="service-info">
+                                <a href="#vid-social">
+                                <span>Commercial Video Editing &#x2192;</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="service-box" style="background-image: url('');">
+                            <div class="service-info">
+                                <a href="#vid-commercial">
+                                <span>Social Media Editing &#x2192;</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="service-box" style="background-image: url('');">
+                            <div class="service-info">
+                                <a href="#vid-color">
+                                <span>Color Grading &#x2192;</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="service-box" style="background-image: url('path_to_image4.jpg');">
+                            <div class="service-info">
+                                <a href="#vid-youtube">
+                                <span>Content Creation &#x2192;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Commercial - section 2 -->
+    <!-- commercial - section 3 -->
+    <section id="vid-social">
+        <div class="maincontainer">
+            <div class="Sections Section3">
+                <div class="ComVidContent">
+                    <h1>Commercial Video Editing</h1>
+                    <p>Dedicated to delivering commercial video edits that not only meet but exceed client expectations, ensuring maximum audience engagement.With a keen eye for detail and <br>a passion for storytelling, I create videos that leave a lasting impact and drive measurable results.</p>
+                    <div class="comgif-container">
+                        <div class="comgif-frame">
+                            <video src="Images/Services/VideoEditing/wef.mp4" alt="Before Editing" width="100%" height="100%">
+                        </div>
+                        <div class="arrow-container">
+                            <img src="Images/Services/VideoEditing/Softwares/pngwing.com (4).png" alt="Premiere Pro Logo" class="premiere-logo">
+                            <div class="arrow">&#x2192;</div>
+                        </div>
+                        <div class="comgif-frame">
+                            <img src="after.gif" alt="After Editing" width="100%" height="100%">
+                        </div>
+                    </div>
+                    <a href="#vid-commercial">
+                        <button class="next-section" onclick="scrollToNextSection()">Next Section</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Social - section 2 -->
     <section id="vid-commercial">
         <div class="maincontainer">
             <div class="Sections Section2">
                 <div>
                     <center>
-                    <h1>Commercial Video</h1>
-                    <p>Specializing in commercial video editing,
-                        I bring brands to life through captivating visual storytelling. Meticulous
-                        attention to detail ensures polished, engaging videos that resonate with audiences.
-                    </p>
+                        <h1>Social-Meida Editing</h1>
+                        <p>Specializing in commercial video editing,
+                            I bring brands to life through captivating visual storytelling. Meticulous
+                            attention to detail ensures polished, engaging videos that resonate with audiences.
+                        </p>
                     </center>
                 </div>
                 <div class="vidgallery">
                     <div class="gallery-item">
-                        <img src="Images/286386654_584241096598216_1567006607997585948_n.jpg"
-                            alt="Graphic Design Image 1">
+                        <img src="Images/Services/VideoEditing/SocialMedia/tiktok.gif" alt="Graphic Design Image 1">
                         <p>Design 1</p>
                     </div>
                     <div class="gallery-item">
-                        <img src="Images/286386654_584241096598216_1567006607997585948_n.jpg"
-                            alt="Graphic Design Image 2">
+                        <img src="Images/Services/VideoEditing/SocialMedia/youtube.gif" alt="Graphic Design Image 2">
                         <p>Design 2</p>
                     </div>
                     <div class="gallery-item">
@@ -68,31 +138,38 @@
         </div>
     </section>
 
-    <!-- social media - section 3 -->
-    <section id="vid-social">
-        <div class="maincontainer">
-            <div class="Sections Section3">
-                <h1>social</h1>
-                <a href="#vid-commercial">
-                    <button class="ScrollButton"> Hi</button>
-                </a>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Color grading - section 4 -->
     <section id="vid-color">
         <div class="maincontainer">
             <div class="Sections Section4">
-                <h1>color grading</h1>
-                <a href="#vid-infographics">
-                    <button class="ScrollButton"> Hi</button>
-                </a>
+
+                <div class="ColorGradeContainer-wrapper">
+                    <div class="ColorGradeContainer">
+                        <div class="CGtext-section">
+                            <h2>Color Grading </h2>
+                            <p>Observe the difference between the original footage and the color-graded version in the
+                                video to the right. The CGvideoo is displayed within a monitor frame for a better visual
+                                experience.</p>
+                        </div>
+                        <div class="CGvideoo-section">
+                            <div class="monitor">
+                                <div class="CGvideoo-wrapper">
+                                    <video src="Images/Services/VideoEditing/v1_1.mp4" autoplay loop muted></video>
+                                    <div class="CGtext-overlay left">Before</div>
+                                    <div class="CGtext-overlay right">After</div>
+                                    <div class="divider"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- inforgraphics - section 5 -->
+    <!-- inforgraphics - section 5 
     <section id="vid-infographics">
         <div class="maincontainer">
             <div class="Sections Section5">
@@ -103,16 +180,52 @@
             </div>
         </div>
     </section>
-
+-->
 
     <!-- channels/YT - section 6 -->
     <section id="vid-youtube">
         <div class="maincontainer">
             <div class="Sections Section6">
-                <h1>YT channels</h1>
-                <a href="#Services">
-                    <button class="ScrollButton"> Hi</button>
-                </a>
+                <div>
+                    <h1>content Creation</h1>
+                    <p>With a focus on YouTube video production, I create dynamic and professional videos designed to
+                        engage viewers and<br> enhance your brand’s visibility, utilizing expert editing, compelling
+                        storytelling, and high-quality visuals.</p>
+                </div>
+
+                <div class="YTchannels">
+
+                    <div class="youtubecard">
+
+                            <img src="Images/Services/VideoEditing/YTThumbnails/logo.png" class="youtubecard-photo"></img>
+            
+                        <div class="youtubecard-title">Quahog Chronicles<br>
+                            <span>A channel surrounding the animated sitcom "Family Guy"<br> by fox network.Exploring the references and hidden <br> meanings in the show.</span>
+                        </div>
+                        <div class="youtubecard-socials">
+                            <button class ="youtubecard-socials-btn facebook" onclick="window.open('https://youtube.com/@quahog_chronicles.?si=r0vOGDb-SfokV24X', '_blank')">
+                                View Channel
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="youtubecard">
+                         <img src="Images/Services/VideoEditing/YTThumbnails/q1.png" class="youtubecard-photo"></img>
+                        <div class="youtubecard-title">Kusal Jayashanka<br>
+                            <span>Fullstack dev &amp; UX UI</span>
+                        </div>
+                        <div class="youtubecard-socials">
+                            <button class ="youtubecard-socials-btn facebook" onclick="window.open('https://youtube.com/@caeser_112?si=tenIOC81HG0ziouw', '_blank')">
+                                View Channel
+                            </button>
+                   
+                        </div>
+                    </div>
+
+
+                </div>
+
             </div>
         </div>
     </section>

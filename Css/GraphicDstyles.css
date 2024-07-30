@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Staatliches', cursive;
 }
 
 html{
@@ -18,45 +20,639 @@ html{
     height: 100vh;
 
 }
-
+/*  ---------------------- First section ------------------------------- */
 .Section1 {
-    background-color: chartreuse;
+    background-image: url(../Images/Services/GraphicDesign/FirstPage/sky.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100% 100vh;
+    position: relative;
+    z-index: 99;
+ 
 }
+
+.billboard_image{
+    height: 90vh;
+    width : auto;
+    position: absolute;
+    top: 8rem;
+    left: 3rem;
+
+
+}
+
+
+.Section1 h1{
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ffd000;
+    padding-left: 65rem;
+}
+.Section1 p{
+    line-height: 2.5rem;
+    font-size: 2.2rem;
+    text-align: left;
+    padding-left: 65rem;
+    
+}
+
+.designfirstpageitemalign{
+  padding-left: 65rem;
+  padding-top: 2rem;
+}
+
+.DesignSoftwares{
+  display: flex;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+}
+
+.DesignSoftwareProperties{
+  max-width: 5rem;
+  max-height: 6rem;
+  width: 100%;
+  height: auto;
+}
+
+.graphicfirsbutton-74 {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  box-shadow: #000000 4px 4px 0 0;
+  color: #000000;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-left: 65rem;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  
+}
+
+.graphicfirsbutton-74:hover {
+  background-color: #e3c605;
+}
+
+.graphicfirsbutton-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .graphicfirsbutton-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+
+/* -------------------------------------------  social media design -------------------------------------------------------*/
+
 
 .Section2 {
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
 }
 
-/* illustration */
+.social_topic{
+    text-align: left;
+    padding-top: 6rem;
+    font-size: 5rem;
+    line-height: 4rem;
+    color: #fff;
+}
+
+.social_paragraph{
+    text-align: left;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.socialmedia_box{
+    display: flex;
+}
+
+
+/* Youtube Thumbnails */
+
+.social_YT{
+    border: 1px solid #000000;
+    width: 19%;
+    height: 100vh;
+    padding-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: scroll-up 10s linear infinite;
+}
+
+
+@keyframes scroll-up {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20%); }
+}
+
+
+
+.thumbnail {
+  width: 320px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 3%;
+}
+
+.thumbnail .info {
+  padding: 10px;
+}
+
+.thumbnail .title {
+  font-size: 16px;
+  font-weight: semi bold;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.thumbnail .meta {
+  display: flex;
+  align-items: center;
+}
+
+.thumbnail .meta img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.thumbnail .meta .details {
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail .meta .details .channel-name {
+  font-size: 14px;
+  color: #666;
+}
+
+.thumbnail .meta .details .views-date {
+  font-size: 12px;
+  color: #999;
+}
+
+/*  facebook posts */
+
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  animation: scroll-up 20s linear infinite;
+}
+
+/*
+@keyframes scroll-up {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+*/
+.post {
+  width: 420px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post .header {
+  display: flex;
+  align-items: center;
+}
+
+.post .header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post .header .details {
+  display: flex;
+  flex-direction: column;
+}
+
+.post .header .details .page-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.post .header .details .post-date {
+  font-size: 12px;
+  color: #888;
+}
+
+.post .content {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.post .photo {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.post .buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.post .buttons button {
+  background: none;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.post .buttons button img {
+  margin-right: 5px;
+}
+
+.post .buttons button:hover {
+  color: #000;
+}
+
+
+
+/*social media design topic container */
+.socialmedia_posters{
+    border: 1px solid #000000;
+    width: 24%;
+    height: 100vh;
+
+}
+
+/* facebook posts */
+
+.socialmedia_posts{
+    border: 1px solid #000000;
+    width: 26%;
+    height: 100vh;
+
+}
+
+/* instagram posts */
+.insta_posts{
+  border: 1px solid #000000;
+  width: 31%;
+  height: 100vh;
+
+}
+
+.instaPost {
+  width: 500px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.instaPost .header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.instaPost .header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.instaPost .header .details {
+  display: flex;
+  flex-direction: column;
+}
+
+.instaPost .header .details .username {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.instaPost .header .details .location {
+  font-size: 12px;
+  color: #888;
+}
+
+.instaPost .image {
+  width: 100%;
+  height: auto;
+}
+
+.instaPost .footer {
+  padding: 10px;
+}
+
+.instaPost .footer .actions {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.instaPost .footer .actions button {
+  background: none;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.instaPost .footer .actions button img {
+  margin-right: 5px;
+}
+
+.instaPost .footer .actions button:hover {
+  color: #000;
+}
+
+.instaPost .footer .likes {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.instaPost .footer .comments {
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+
+
+
+
+/* ---------------------------------------- Branding section ----------------------------------- */
+
+.Section4 {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.Section4 h1{
+  text-align: center;
+  padding-top: 6%;
+  font-size: 5rem;
+  line-height: 4rem;
+  color: #000000;
+}
+
+.Section4 p{
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  color: #000000;
+}
+
+.items {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+
+.items .item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 34rem;
+  height: 35rem;
+  border-radius: 5%;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+  z-index: -1;
+  opacity: 0;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item.active {
+  opacity: 1;
+  z-index: 99;
+  box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+}
+
+.item.prev {
+  z-index: 2;
+  opacity: 0.25;
+  transform: translate(-125%, -50%);
+}
+
+.item.next {
+  z-index: 2;
+  opacity: 0.25;
+  transform: translate(25%, -50%);
+}
+
+.items .button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 34rem;
+  z-index: 100;
+}
+
+.button-container .button {
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.2;
+  transition: all 300ms ease-in-out;
+}
+
+.button-container .button:hover {
+  opacity: 0.4;
+}
+
+.button-container .button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  z-index: -99;
+}
+
+.button-container .button:nth-child(1) {
+  float: left;
+}
+
+.button-container .button:nth-child(2) {
+  float: right;
+}
+
+
+
+/* -------------------------------------------  illustration -------------------------------------------------------*/
 
 .Section3 {
-    background-image: url(../Images/Services/GraphicDesign/brick\ wall.jpeg);
+    background-color: #000000;
     background-repeat: no-repeat;
-    background-size: 100%;
+    position: relative;
+    z-index: 99;
 }
+
+
 
 .illustration {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
     text-align: center;
-    padding-top: 5%;
 
 }
 
 .illustrationtopic {
-    color: #ffffff;
-    font-size: 60px;
+  padding-top: 15%;
+    color: #ffffff; 
+    font-size: 5rem;
 }
 
 .illustrationparagraph {
     color: #ffffff;
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 1.4rem;
+    line-height: 1.1;
 
 }
 
 /* Graphic design photo frames styles */
+
+
+.illustrationphotogrid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration_frame {
+  border:25px solid #222;
+  margin: 4rem;
+  height:475px;
+  width:350px;
+  -webkit-box-shadow:  px 2px 3px 1px rgba(0, 0, 0, .5);
+  box-shadow:  0px 3px 10px 4px rgba(0, 0, 0, .3);
+}
+
+.illustration_border {
+  background:white;
+  height:100%;
+  width:100%;
+  -webkit-box-shadow: inset 10px 10px 10px 4px rgba(0, 0, 0, .4);
+  box-shadow: inset 3px 7px 2px 5px rgba(0, 0, 0, .4);
+}
+
+.illustration_image {
+  position:absolute;
+  height:350px;
+  width:250px;
+  margin-left:50px;
+  margin-top:50px;
+  -webkit-box-shadow: inset 10px 10px 10px 4px rgba(0, 0, 0, .6);
+  box-shadow: inset 3px 7px 2px 5px rgba(0, 0, 0, .1);
+  border:2px inset #c9c9c9;
+}
+
+.illustration_text {
+  position:absolute;
+  display: flex;
+  margin-top:420px;
+  font-size:30px;
+  margin-left:85px;
+}
+
+/* arrow between images */
+
+.arrow {
+  display: block;
+  top: 1rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: rotate(270deg);
+}
+
+.arrow span {
+  display: block;
+  width: 1vw;
+  height: 1vw;
+  border-bottom: 5px solid rgb(255, 255, 255);
+  border-right: 5px solid rgb(255, 255, 255);
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+
+
 
 
 
@@ -83,6 +679,7 @@ ul {
     align-items: center;
     width: 100%;
     height: 70px;
+    z-index: 999;
   }
   
   li {
