@@ -13,6 +13,7 @@ This project is a portfolio site built using HTML, CSS, and JavaScript. It showc
 - **About Me Page** – Brief details about my skills and experience.  
 - **Services Page** – Showcasing the services I offer.  
 - **Contact Page** – A section to reach out to me.
+- **Individual pages for services** – 4 pages describing servies and showcasing gallery.
 
   
 ## 📁 File Structure
