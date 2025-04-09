@@ -15,7 +15,27 @@ This project is a portfolio site built using HTML, CSS, and JavaScript. It showc
 - **Contact Page** – A section to reach out to me.
 - **Individual pages for services** – 4 pages describing servies and showcasing gallery.
 
-  
+## 📷 Snapshots
+
+### 🎥 Video Editing
+<p align="center">
+  <img src="Video.gif" width="900" alt="Portfolio Preview">
+</p>
+
+### 🎨 Graphic Design
+<p align="center">
+  <img src="Graphic Design.JPG" width="900" alt="Portfolio Preview">
+  <img src="Graphi_illustrations.JPG" width="900" alt="Portfolio Preview">
+</p>
+
+### 🎮 3D Generalist
+<p align="center">
+  <img src="3d.JPG" width="900" alt="Portfolio Preview">
+  <img src="3d gallery.JPG" width="900" alt="Portfolio Preview">
+  <img src="3D_products.JPG" width="900" alt="Portfolio Preview">
+</p>
+
+
 ## 📁 File Structure
 
 ```
@@ -46,7 +66,7 @@ This project is a portfolio site built using HTML, CSS, and JavaScript. It showc
 
 
 
-## 🎨 Technologies Used
+## ⚙ Technologies Used
 
 - **HTML** – Structure of the website.  
 - **CSS** – Styling and layout.  
